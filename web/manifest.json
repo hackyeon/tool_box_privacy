@@ -1,6 +1,6 @@
 {
-    "name": "tool_box_privacy",
-    "short_name": "tool_box_privacy",
+    "name": "ToolBoxPrivacy",
+    "short_name": "ToolBoxPrivacy",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
