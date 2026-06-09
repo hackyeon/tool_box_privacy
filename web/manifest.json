@@ -1,11 +1,11 @@
 {
-    "name": "ToolBoxPrivacy",
-    "short_name": "ToolBoxPrivacy",
+    "name": "편한도구함 개인정보 처리방침",
+    "short_name": "편한도구함 개인정보 처리방침",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "tool box privacy",
+    "description": "편한도구함 개인정보 처리방침",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

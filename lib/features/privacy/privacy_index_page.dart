@@ -8,12 +8,12 @@ class PrivacyIndexPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('편안한 도구들 개인정보 처리방침')),
+      appBar: AppBar(title: const Text('편한도구함 개인정보 처리방침')),
       body: ListView(
         padding: const EdgeInsets.all(20),
         children: [
           Text(
-            '앱별 개인정보 처리방침은 아래에서 확인하실 수 있습니다.',
+            '각 도구의 개인정보 처리방침을 확인할 수 있습니다.',
             style: Theme.of(context).textTheme.bodyLarge,
           ),
           const SizedBox(height: 16),
@@ -23,6 +23,17 @@ class PrivacyIndexPage extends StatelessWidget {
               title: const Text('EZ PDF 개인정보 처리방침'),
               trailing: const Icon(Icons.chevron_right),
               onTap: () => Navigator.of(context).pushNamed(App.routeEzPdf),
+            ),
+          ),
+
+          const SizedBox(height: 8),
+
+          Card(
+            child: ListTile(
+              leading: const Text('📄', style: TextStyle(fontSize: 24)),
+              title: const Text('QR 생성기 개인정보 처리방침'),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => Navigator.of(context).pushNamed(App.routeQrGenerator),
             ),
           ),
         ],
