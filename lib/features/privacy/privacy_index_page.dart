@@ -36,6 +36,17 @@ class PrivacyIndexPage extends StatelessWidget {
               onTap: () => Navigator.of(context).pushNamed(App.routeQrGenerator),
             ),
           ),
+
+          const SizedBox(height: 8),
+
+          Card(
+            child: ListTile(
+              leading: const Text('📄', style: TextStyle(fontSize: 24)),
+              title: const Text('이미지 도구 개인정보 처리방침'),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => Navigator.of(context).pushNamed(App.routeImageTools),
+            ),
+          ),
         ],
       ),
     );

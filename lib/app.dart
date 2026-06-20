@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tool_box_privacy/features/privacy/qr_generator_privacy_page.dart';
 
 import 'features/privacy/ez_pdf_privacy_page.dart';
+import 'features/privacy/image_tools_privacy_page.dart';
 import 'features/privacy/privacy_index_page.dart';
 
 
@@ -11,6 +12,7 @@ class App extends StatelessWidget {
   static const routeHome = '/';
   static const routeEzPdf = '/ez-pdf';
   static const routeQrGenerator = '/qr-generator';
+  static const routeImageTools = '/image-tools';
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +28,7 @@ class App extends StatelessWidget {
         routeHome: (_) => const PrivacyIndexPage(),
         routeEzPdf: (_) => const EzPdfPrivacyPage(),
         routeQrGenerator: (_) => const QrGeneratorPrivacyPage(),
+        routeImageTools: (_) => const ImageToolsPrivacyPage(),
       },
     );
   }
