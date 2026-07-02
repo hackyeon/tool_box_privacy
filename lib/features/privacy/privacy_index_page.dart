@@ -33,7 +33,8 @@ class PrivacyIndexPage extends StatelessWidget {
               leading: const Text('📄', style: TextStyle(fontSize: 24)),
               title: const Text('QR 생성기 개인정보 처리방침'),
               trailing: const Icon(Icons.chevron_right),
-              onTap: () => Navigator.of(context).pushNamed(App.routeQrGenerator),
+              onTap: () =>
+                  Navigator.of(context).pushNamed(App.routeQrGenerator),
             ),
           ),
 
@@ -45,6 +46,17 @@ class PrivacyIndexPage extends StatelessWidget {
               title: const Text('이미지 도구 개인정보 처리방침'),
               trailing: const Icon(Icons.chevron_right),
               onTap: () => Navigator.of(context).pushNamed(App.routeImageTools),
+            ),
+          ),
+
+          const SizedBox(height: 8),
+
+          Card(
+            child: ListTile(
+              leading: const Text('🎞️', style: TextStyle(fontSize: 24)),
+              title: const Text('움짤 만들기 개인정보 처리방침'),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => Navigator.of(context).pushNamed(App.routeGifMaker),
             ),
           ),
         ],
